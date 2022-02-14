@@ -18,4 +18,4 @@ WHERE email ='luisrojas@yahoo.cl';
 UPDATE track
 SET composer = 'The darkness around us'
 WHERE genre_id = (SELECT genre_id FROM genre WHERE name = 'Metal') 
-AND composer = null
+AND composer IS null;
